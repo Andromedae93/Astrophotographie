@@ -1,0 +1,125 @@
+<!-- Copyright (C) 2017     Valentin JUNGBLUTH  <valentin.jungbluth@hotmail.com>
+
+This script lets to define homepage template for "Optiques" -->
+
+{% extends 'Base_Materiel.html' %}
+
+{% load staticfiles %}
+{% load static %}
+
+{% block content %}
+	<div id="content">
+
+        <br></br>
+
+	       	<div id="content-1">
+			  	<div class="presentation-title">
+			   		<p>Petit mot de l'Astrophotographe & Développeur du site</p>
+			  	</div>
+			  	<div class="presentation-text">
+			   		<p>  Dans cette section, vous trouverez les différents capteurs photos que j'utilise actuellement dans le cadre de mes sessions astrophotographique. Cela me permet de prendre les objets astronomiques en photo, mais également d'assurer un suivi correct grâce à l'autoguidage.
+			   		Je ne mentionne pas le matériel que j'ai eu dans le passé, celui-ci n'ayant que peu d'importance.</p>
+			  	</div> 
+			</div>
+
+			<br></br>
+			
+			<div class="text">
+	        	<p>Vous pouvez accéder aux différentes optiques de cette page également en cliquant ci-dessous :
+		        	<ul>
+		        		<li><span class="liste"><a href="#content-2"> Canon EOS 1100D Défiltré Astrodon</a></span></li>
+		        		<li><span class="liste"><a href="#content-3"> Caméra autoguidage QHY5L-II Couleur</a></span></li>
+		        	</ul>
+		        </p>
+        	</div>
+        	
+
+        	<br></br>
+
+			<div id="content-2">
+			  	<div class="presentation-title">
+			   		<p>Canon EOS 1100D Défiltré Astrodon</p>
+			  	</div>
+			  	<div class="presentation-text">
+			   		<p>  Basé sur un appareil photographique grand public, il me sert d'appareil photo principal lors de mes différentes sorties. Néanmoins, il a été modifié par <a href="http://www.eosforastro.com/astro-photographie">EOS for Astro (Richard Galli)</a> en enlevant le filtre IR d'origine et en le remplaçant par un filtre Astrodon Inside. Cela a pour but d'étendre le spectre de l'appareil photo numérique et ainsi obtenir du signal conséquent dans la précieuse raie du Halpha (le rouge des nébuleuses)! </p><br />
+
+			   		<p> Voici les caractéristiques du Canon 1100D Astrodon : 
+			   		<ul>
+			   			<li><span class="liste">Capteur :</span> CMOS APS-C</li>
+			   			<li><span class="liste">Résolution :</span> 12 Mpx</li>
+			   			<li><span class="liste">Taille du capteur :</span> 22.2 x 14.8 mm</li>
+			   			<li><span class="liste">Taille des pixels :</span>5.19 microns</li>
+			   			<li><span class="liste">Résolution d'image :</span> 4278 x 2852 pixels</li>
+			   			<li><span class="liste">Poids :</span> 495 g</li>
+			   		</ul></p>
+
+			   		<p> Cet appareil photo est très bien pour débuter dans le domaine de l'astrophotographie. C'est un appareil à prix très intéressant, capable de sortir de très beaux clichés. Il permet d'obtenir des images au format RAW.</p> 
+
+			   		<p> Néanmoins on atteint très vite les limites de cet appareil dès lors que l'on souhaite un degré d'exigence un peu plus important. Le capteur chauffe très vite dès lors que l'on commence à poser. Ainsi, le bruit est très présent et encore plus lorsque la température extérieure devient élevée (printemps/été).</p>
+
+			   		<p> De plus, cet appareil souffre très souvent de traits noirs verticaux sous les étoiles lumineuses (défaut de capteur) ainsi que de bandes horizontales. Autant dire que ce n'est pas l'idéal pour sortir de très bons clichés !</p>
+			  	</div> 
+				<br></br>
+				<div id="presentation-image">
+					<div class="grid">
+						<figure class="effect-new">
+						<center>
+						<img style='width:50%' src="{% get_static_prefix %}images/Canon1100D.jpg" alt="Canon1100D"/>
+						<figcaption>
+							<div>
+								<p></p>
+								<p><b>Canon EOS 1100D défiltré Astrodon</b></p>
+							</div>
+						</figcaption>
+						</center>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+			<br></br>
+
+			<div id="content-3">
+			  	<div class="presentation-title">
+			   		<p>Caméra Autoguidage QHY5L-II Couleur</p>
+			  	</div>
+			  	<div class="presentation-text">
+			   		<p>  Cette petite caméra est idéale pour réaliser l'autoguidage de mon système. Légère et relativement performante, elle me permet d'assurer une bonne correction du suivi jusqu'à présent. Je l'utilise pour l'autoguidage, mais elle conviendrait également parfaitement pour la photographie lunaire & planétaire.</p><br />
+
+			   		<p> Voici les caractéristiques de la QHY5L-II Couleur : 
+			   		<ul>
+			   			<li><span class="liste">Capteur :</span> CMOS 14 bit Couleur</li>
+			   			<li><span class="liste">Résolution :</span> 1.2 Mpx</li>
+			   			<li><span class="liste">Taille du capteur :</span> 4.8 x 3.6 mm</li>
+			   			<li><span class="liste">Taille des pixels :</span> 3.75 microns</li>
+			   			<li><span class="liste">Résolution d'image :</span> 1920 x 1200 pixels</li>
+			   			<li><span class="liste">Poids :</span> 45 g</li>
+			   		</ul></p>
+
+			   	</div> 
+				<br></br>
+				<div id="presentation-image">
+					<div class="grid">
+						<figure class="effect-new">
+						<center>
+						<img style='width:50%' src="{% get_static_prefix %}images/QHY.jpg" alt="QHY"/>
+						<figcaption>
+							<div>
+								<p></p>
+								<p><b>Caméra Autoguidage QHY5L-II Couleur</b></p>
+							</div>
+						</figcaption>
+						</center>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="row"></div>
+
+	        <br></br>
+	</div>
+	<p></p>
+
+{% endblock content %}

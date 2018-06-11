@@ -1,0 +1,72 @@
+<!-- Copyright (C) 2017     Valentin JUNGBLUTH  <valentin.jungbluth@hotmail.com>
+
+This script lets to define homepage template for "Materiel" -->
+
+{% extends 'Base_Photographies.html' %}
+
+{% load staticfiles %}
+{% load static %}
+
+{% block content %}
+    <div id="content">
+
+        <br>
+
+        <div id="content-1">
+            <div id="presentation-title">
+                <p>Petit mot de l'Astrophotographe & Développeur du site</p>
+            </div>
+            <div id="presentation-text">
+                <p> Cette section du site présente l'ensemble de mes photos astros depuis mes débuts. Vous pourrez
+                    constater l'évolution de mon travail avec le temps grace à l'expérience acquise ainsi que
+                    l'optimisation du matériel et des logiciels employés.</p><br/>
+
+                <p> Evidemment, il m'a fallut beaucoup (énormément) de temps et d'essais infructueux pour comprendre
+                    tous les principes et avoir la technique nécessaire aux clichés que je vous présente !
+                </p>
+            </div>
+        </div>
+
+        <p></p>
+        <br>
+
+        <div id="sommaire">
+            <ul>
+                <li><a class="sommaire-planetaire" href="#"> Planétaires </a></li>
+                <li><a class="sommaire-galaxies" href="{% url 'Galaxies' %}"> Galaxies </a></li>
+                <li><a class="sommaire-nebdiffuses" href="{% url 'Nebuleuses_Diffuses' %}"> Nébuleuses Diffuses </a>
+                </li>
+                <li><a class="sommaire-nebplanetaires" href="{% url 'Nebuleuses_Planetaires' %}"> Nébuleuses
+                    Planétaires </a></li>
+                <li><a class="sommaire-amasglob" href="{% url 'Amas_Globulaires' %}"> Amas Globulaires </a></li>
+                <li><a class="sommaire-amasouvert" href="{% url 'Amas_Ouverts' %}"> Amas Ouverts </a></li>
+                <li><a class="sommaire-autres" href="#"> Autres </a></li>
+            </ul>
+        </div>
+
+        <br>
+
+        <br>
+        <div id="presentation-image">
+            <div class="grid">
+                <figure class="effect-new">
+                    <center>
+                        <img style='width:50%' src="{% get_static_prefix %}images/Bulle.jpg" alt="Bulle"/>
+                        <figcaption>
+                            <div>
+                                <p></p>
+                                <p><b>Plus belle réalisation à ce jour : Nébuleuse de la Bulle</b></p>
+                            </div>
+                        </figcaption>
+                    </center>
+                </figure>
+            </div>
+        </div>
+
+        <div class="row"></div>
+
+        <br></br>
+    </div>
+    <p></p>
+
+{% endblock content %}

@@ -1,0 +1,67 @@
+ <!-- Copyright (C) 2017     Valentin JUNGBLUTH  <valentin.jungbluth@hotmail.com>
+
+This script lets to define homepage template for "Accueil" -->
+
+{% extends 'Base_Accueil.html' %}
+
+{% load staticfiles %}
+{% load static %}
+
+{% block content %}
+
+		<div id="content">
+
+        	<br></br>
+
+	        <div id="content-1">
+
+			   <div id="presentation-title">
+			   		<p>Petit mot de l'Astrophotographe & Développeur du site</p>
+			   </div>
+			   <div id="presentation-text">
+			   		<p> Vous pouvez laisser un petit message dans ce livre d'or que je mets à votre disposition</p>
+			   </div>
+			</div>
+
+			<br></br>
+
+			<div class="row">
+	        </div>
+
+            <form class = "form" method='POST' action=''> {% csrf_token %} <br></br>
+                {{ form.as_p }} <!-- Display child part formulary -->
+                <br></br>
+
+                <input class="submit-btn" type="submit" onclick="return confirm('Valider le formulaire ?')" />
+            </form>
+
+	    	<div class="row">
+	        </div>
+	        <br />
+	        <br />
+	        <br />
+	        <br />
+
+	        {% for message in messages %}
+
+	        <div id="content-messages">
+
+			   <div id="presentation-author">
+                   <p>De {{ message.nom }} {{ message.prenom }} <br/> Le : {{ message.date }} </p>
+			   </div>
+			   <div id="presentation-description">
+			   		<p> {{ message.description }}</p>
+			   </div>
+			</div>
+
+	        <br />
+
+	        {% endfor %}
+
+         <br />
+         <br />
+
+	    </div>
+
+{% endblock content %}
+

@@ -1,0 +1,170 @@
+<!-- Copyright (C) 2017     Valentin JUNGBLUTH  <valentin.jungbluth@hotmail.com>
+
+This script lets to define homepage template for "Optiques" -->
+
+{% extends 'Base_Materiel.html' %}
+
+{% load staticfiles %}
+{% load static %}
+
+{% block content %}
+	<div id="content">
+
+        <br></br>
+
+	       	<div id="content-1">
+			  	<div class="presentation-title">
+			   		<p>Petit mot de l'Astrophotographe & Développeur du site</p>
+			  	</div>
+			  	<div class="presentation-text">
+			   		<p>  Dans cette section, vous trouverez l'ensemble des optiques que j'utilise actuellement dans le cadre de mes sessions astrophotographique.
+			   		Je ne mentionne pas le matériel que j'ai eu dans le passé, celui-ci n'ayant que peu d'importance.</p>
+			  	</div> 
+			</div>
+
+			<br></br>
+			
+			<div class="text">
+	        	<p>Vous pouvez accéder aux différentes optiques de cette page également en cliquant ci-dessous :
+		        	<ul class="text-list-content">
+		        		<li><span class="liste"><a href="#content-2"> Lunette SkyWatcher 80ED</a></span></li>
+		        		<li><span class="liste"><a href="#content-3"> Télecope SkyWatcher 200/1000</a></span></li>
+		        		<li><span class="liste"><a href="#content-4"> Lunette Kepler 80/400</a></span></li>
+		        	</ul>
+		        </p>
+        	</div>
+        	
+
+        	<br></br>
+
+			<div id="content-2">
+			  	<div class="presentation-title">
+			   		<p>Lunette Skywtacher 80ED Black Diamond</p>
+			  	</div>
+			  	<div class="presentation-text">
+			   		<p>  C'est le principal instrument que j'utilise dans mes sessions photo. Acquise fin 2016, cette lunette a remplacé mon ancien Newton 150/750 ouvert à F/D=5.</p><br />
+
+			   		<p> Voici les caractéristiques de la lunette : 
+			   		<ul>
+			   			<li><span class="liste">Type :</span> Lunette semi-apochromatique</li>
+			   			<li><span class="liste">Diamètre :</span> 80 mm</li>
+			   			<li><span class="liste">Focale :</span> 600 mm</li>
+			   			<li><span class="liste">Rapport Focale/Diamètre :</span> 7.5</li>
+			   			<li><span class="liste">Porte-oculaire :</span> Crayford démultiplication 11:1 (Dual Speed)</li>
+			   			<li><span class="liste">Poids :</span> 2.5 kg</li>
+			   		</ul></p>
+
+			   		<p> Cette lunette possède plusieurs avantages. Tout d'abord son poids de seulement 2.5 kg permet de poser la lunette sur n'importe quelle monture sans avoir à forcer sur les moteurs. Son petit gabarit réduit le porte-à-faux et permet de réaliser un équilibrage de très bonne qualité de manière quasi-systématique.</p><br />
+
+			   		<p> Ensuite, avec un diamètre de 80mm et une focale de 600 (abaissée à 510 avec un réducteur de focale x0.85), son utilisation convient parfaitement avec le grand champ. Cette lunette remplit parfaitement les conditions dans l'imagerie des grandes nébuleuses à émission, des champs d'étoiles, ... </p>
+
+			   		<p> Son rapport F/D de 7.5 (abaissé à 6.3 avec le réducteur de focale) fait de cette lunette un instrument relativement lumineux et permettra de capter bon nombre de photons en un temps limité. Sa conception est étudiée pour ne pas avoir à bricoler l'instrument. Les lunettes ont l'avantages de ne pas nécessiter de collimation (alignement des optiques) et sont quasiment prêtes à l'emploi une fois sur le site d'observation. Seule la mise en température du tube peut s'avérer un petit peu longue, quoi que sans trop de soucis avec une lunette de ce type. Il est également nécessaire de vérifier de temps en temps la mise au point qui peut bouger pendant une nuit de photo.</p>
+			  	</div> 
+				<br></br>
+				<div id="presentation-image">
+					<div class="grid">
+						<figure class="effect-new">
+						<center>
+						<img style='width:50%' src="{% get_static_prefix %}images/SWBD.jpg" alt="SW80ED"/>
+						<figcaption>
+							<div>
+								<p></p>
+								<p><b>Lunette SkyWatcher 80ED Black Diamond</b></p>
+							</div>
+						</figcaption>
+						</center>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+			<br></br>
+
+			<div id="content-3">
+			  	<div class="presentation-title">
+			   		<p>Télescope SkyWatcher 200/1000</p>
+			  	</div>
+			  	<div class="presentation-text">
+			   		<p>  J'ai pu acquérir cet instrument lors de l'achat de ma nouvelle monture AZ-EQ6. Il offre l'avantage d'être complémentaire avec la lunette SkyWatcher 80ED puisqu'il permet de photographier des objets beaucoup plus petit avec une meilleure résolution.</p><br />
+
+			   		<p> Voici les caractéristiques du télescope : 
+			   		<ul>
+			   			<li><span class="liste">Type :</span> Télescope Newton</li>
+			   			<li><span class="liste">Diamètre :</span> 200 mm</li>
+			   			<li><span class="liste">Focale :</span> 1000 mm</li>
+			   			<li><span class="liste">Rapport Focale/Diamètre :</span> 5</li>
+			   			<li><span class="liste">Porte-oculaire :</span> Crayford démultiplication 11:1 (Dual Speed)</li>
+			   			<li><span class="liste">Poids :</span> 8.7 kg</li>
+			   		</ul></p>
+
+			   		<p> Cet instrument est totalement différent de la lunette. Tout d'abord son grand diamètre permet de gagner en résolution de façon conséquente. Sa distance focale de 1 mètre restreint le champ observé/photographié et permet de cibler des objets plus petits que ceux de la lunette. Son rapport diamètre/focal à 5 permet d'avoir un instrument très ouvert ! Récoltant ainsi beaucoup de photons et permettant d'acquérir rapidement du signal. </p><br />
+
+			   		<p> Avec tous les avantages cités au dessus, on pourrait croire que cet intrument est l'instrument idéal. Néanmoins, il possède aussi beaucoup d'inconvénients à mon sens. Tout d'abord, son poids de presque 9 kg en fait un instrument plus délicat à manier. L'équilibrage de l'instrument se doit d'être impeccable, mais difficilement atteignable.</p><br />
+
+			   		<p> De plus, un Newton étant composé de miroirs mobiles, il faut constamment s'assurer qu'ils soient bien alignés les uns aux autres. Ce processus appelé collimation permet d'obtenir une image nette en jouant sur les positions des miroirs primaire et secondaire. L'étape n'est pas forcément compliquée, ni longue, mais elle est à refaire à chaque sortie, surtout si l'instrument a été transporté. La qualité de l'image finale dépendra grandement de la précision de la collimation.</p><br />
+
+			   		<p> C'est un instrument que je sors beaucoup moins de part les inconvénients cités ci-dessus. Néanmoins il n'en reste pas moins redoutable avec de belles images à la clé !</p>
+			  	</div> 
+				<br></br>
+				<div id="presentation-image">
+					<div class="grid">
+						<figure class="effect-new">
+						<center>
+						<img style='width:50%' src="{% get_static_prefix %}images/Newton.jpg" alt="Newton200/1000"/>
+						<figcaption>
+							<div>
+								<p></p>
+								<p><b>Télescope SkyWatcher 200/1000 Black Diamond</b></p>
+							</div>
+						</figcaption>
+						</center>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+			<br></br>
+
+			<div id="content-4">
+			  	<div class="presentation-title">
+			   		<p>Lunette Kepler 80/400</p>
+			  	</div>
+			  	<div class="presentation-text">
+			   		<p>  Cette lunette à un but bien particulier dans ma configuration pour faire de la photographie. Elle me permet d'utiliser une pratique appelée "Autoguidage" qui consiste à garder une étoile au centre d'un capteur afin de pouvoir compenser le mouvement de rotation de la Terre. Celui-ci est normalement corrigé par la Mise en Station de la monture, mais des petites erreurs subsistent et l'autoguidage va permettre de les compenser.</p><br />
+
+			   		<p> Voici les caractéristiques du télescope : 
+			   		<ul>
+			   			<li><span class="liste">Type :</span> Lunette Achromatique</li>
+			   			<li><span class="liste">Diamètre :</span> 80 mm</li>
+			   			<li><span class="liste">Focale :</span> 400 mm</li>
+			   			<li><span class="liste">Rapport Focale/Diamètre :</span> 5</li>
+			   			<li><span class="liste">Porte-oculaire :</span> Sans Crayford démultiplication 11:1 (Dual Speed)</li>
+			   			<li><span class="liste">Poids :</span> 1.7 kg</li>
+			   		</ul></p>
+
+			  	</div> 
+				<br></br>
+				<div id="presentation-image">
+					<div class="grid">
+						<figure class="effect-new">
+						<center>
+						<img style='width:50%' src="{% get_static_prefix %}images/Kepler.jpg" alt="Kepler80/400"/>
+						<figcaption>
+							<div>
+								<p></p>
+								<p><b>Lunette Kepler 80/400</b></p>
+							</div>
+						</figcaption>
+						</center>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+			<div class="row"></div>
+
+	        <br></br>
+	</div>
+	<p></p>
+
+{% endblock content %}

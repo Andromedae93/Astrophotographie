@@ -1,0 +1,86 @@
+<!-- Copyright (C) 2017     Valentin JUNGBLUTH  <valentin.jungbluth@hotmail.com>
+
+This script lets to define homepage template for "Optiques" -->
+
+{% extends 'Base_Materiel.html' %}
+
+{% load staticfiles %}
+{% load static %}
+
+{% block content %}
+	<div id="content">
+
+        <br></br>
+
+	       	<div id="content-1">
+			  	<div class="presentation-title">
+			   		<p>Petit mot de l'Astrophotographe & Développeur du site</p>
+			  	</div>
+			  	<div class="presentation-text">
+			   		<p>  Dans cette section, vous trouverez la monture que j'utilise actuellement dans le cadre de mes sessions astrophotographique.
+			   		Je ne mentionne pas le matériel que j'ai eu dans le passé, celui-ci n'ayant que peu d'importance.</p>
+			  	</div> 
+			</div>
+
+			<br></br>
+			
+			<div class="text">
+	        	<p>Vous pouvez accéder aux différentes optiques de cette page également en cliquant ci-dessous :
+		        	<ul>
+		        		<li><span class="liste"><a href="#content-2"> Monture Skywatcher AZ-EQ6</a></span></li>
+		        	</ul>
+		        </p>
+        	</div>
+        	
+
+        	<br></br>
+
+			<div id="content-2">
+			  	<div class="presentation-title">
+			   		<p>Monture Skywtacher AZ-EQ6-GT</p>
+			  	</div>
+			  	<div class="presentation-text">
+			   		<p>  C'est la monture que j'utilise depuis mai 2017 et qui me permet d'avoir un suivi extrêmement propre lors de mes sessions photos. Elle provient de chez <a href="https://www.pierro-astro.com/">Pierro-Astro</a> et a été optmisée avec une erreur périodique très basse permettant un suivi propre et en douceur.</p><br />
+
+			   		<p> Voici les caractéristiques de la monture : 
+			   		<ul>
+			   			<li><span class="liste">Type :</span> Monture Allemande Equatoriale</li>
+			   			<li><span class="liste">Charge maximale / en astrophoto :</span> 19 kg / 16 kg</li>
+			   			<li><span class="liste">Résolution moteur pas à pas :</span> 0.144arc/sec</li>
+			   			<li><span class="liste">Goto :</span> oui avec 42 900 objets dans la base de données</li>
+			   			<li><span class="liste">Poids tête seule :</span> 15 kg</li>
+			   			<li><span class="liste">Poids trépied :</span> 7.5 kg</li>
+			   		</ul></p>
+
+			   		<p> Cette monture est un bijoux à utiliser. Elle est extrêmement douce, très précise au niveau du suivi ainsi que lors de la phase de mise en station avec un viseur polaire fantastique ! Son Goto est redoutable lors de la recherche et le pointage des objets.</p><br />
+
+			   		<p> En général, il me faut environ 1h pour procéder au montage des éléments, équilibrage du système, mise en station à l'aide du viseur polaire et calibration du Goto sur 3 étoiles. Autant dire que c'est un jeu d'enfant grâce à sa simplicité d'utilisation.</p>
+
+			   		<p> J'obtiens facilement des temps de poses allant jusqu'à 2 minutes (je n'ai encore jamais poussé plus) sans autoguidage et avec des étoiles ponctuelles. </p>
+			  	</div> 
+				<br></br>
+				<div id="presentation-image">
+					<div class="grid">
+						<figure class="effect-new">
+						<center>
+						<img style='width:50%' src="{% get_static_prefix %}images/AZ-EQ6.jpg" alt="AZ-EQ6"/>
+						<figcaption>
+							<div>
+								<p></p>
+								<p><b>Monture SkyWatcher AZ-EQ6-GT</b></p>
+							</div>
+						</figcaption>
+						</center>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="row"></div>
+
+	        <br></br>
+	</div>
+	<p></p>
+
+{% endblock content %}

@@ -1,0 +1,48 @@
+<!-- Copyright (C) 2017     Valentin JUNGBLUTH  <valentin.jungbluth@hotmail.com>
+  
+This script lets to define a basic template for "Accueil" -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        {% load staticfiles %}
+        {% load static %}
+
+
+        <title> Astrophotographie - Accueil </title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="{% get_static_prefix %}css/Base_Accueil.css"/>
+		<link rel="shortcut icon" href="{% get_static_prefix %}images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="{% get_static_prefix %}images/favicon.ico" type="image/x-icon">
+
+    </head>
+
+
+    <body>
+
+        {% include 'Common/Navbar.html' %}
+
+        <div class="row">
+        </div>
+
+        {% block content %}
+        {% endblock content %}  
+
+        
+        <div id="footer">
+	        <footer>
+	        {% include 'Common/Footer.html' %}
+	        </footer>
+	    </div>
+      
+
+    </body>
+</html>

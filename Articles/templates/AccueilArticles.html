@@ -1,0 +1,79 @@
+<!-- Copyright (C) 2017     Valentin JUNGBLUTH  <valentin.jungbluth@hotmail.com>
+
+This script lets to define homepage template for "Accueil" -->
+
+{% extends 'Base_Articles.html' %}
+
+{% load staticfiles %}
+{% load static %}
+
+{% block content %}
+
+		<div id="content">
+
+        	<br></br>
+
+	        <div id="content-1">
+
+			   <div id="presentation-title">
+			   		<p>Petit mot de l'Astrophotographe & Développeur du site</p>
+			   </div>
+			   <div id="presentation-text">
+			   		<p>  Dans cette partie vous pourrez trouver les articles, publications provenant de mon travail en tant qu'ancien étudiant en Astrophysique ou Astrophotographe amateur.</p><br />
+
+			   		<p> C'est avec plaisir que je vous partage les différents résultats de mes travaux.</p><br />
+
+			   		<p align="center">Je vous souhaite une bonne lecture !</p>
+			   </div>
+			</div>
+
+        <p></p>
+        <br/>
+
+        <br/>
+        <br/>
+
+        <div class="row">
+            <div class="col-lg-4">
+
+			<a class="image" href="{% static 'images/article.pdf' %}">
+                <img src="/static/images/miniature_article.png" width="300" height="387"/>
+            </a>
+            </div>
+
+            <div class="col-lg-offset-1 col-lg-7">
+                <table style="width: 90%;">
+                    <tbody>
+                        <p></p>
+                        <tr>
+                            <td>Numéro Article</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Titre</td>
+                            <td>SMASH 1: a very faint globular cluster disrupting in the outer reaches of the LMC ?</td>
+                        </tr>
+                        <tr>
+                            <td>Auteurs</td>
+                            <td>Nicolas F. Martin, Valentin Jungbluth, David L. Nidever et al.</td>
+                        </tr>
+                        <tr>
+                            <td>Type</td>
+                            <td>Découverte d'un nouvel amas globulaire suite à mes travaux de Master 2</td>
+                        </tr>
+                        <tr>
+                            <td>Date dernière version</td>
+                            <td>4 Octobre 2017</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+	        <br></br>
+
+	    </div>
+	    <p></p>
+
+{% endblock content %}

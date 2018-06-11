@@ -1,0 +1,62 @@
+<!-- Copyright (C) 2017     Valentin JUNGBLUTH  <valentin.jungbluth@hotmail.com>
+
+This script lets to define homepage template for "Accueil" -->
+
+{% extends 'Base_Accueil.html' %}
+
+{% load staticfiles %}
+{% load static %}
+
+{% block content %}
+
+    <div id="content">
+
+        <br></br>
+
+        <div id="content-1">
+
+            <div id="presentation-title">
+                <p>Petit mot de l'Astrophotographe & Développeur du site</p>
+            </div>
+            <div id="presentation-text">
+                <p>  Je vous souhaite la bienvenue sur mon site dédié à l'Astrophotographie. A travers votre parcours sur celui-ci, vous allez découvrir ma passion pour la photographie des objets de l'Univers. Du Soleil, notre étoile, aux galaxies les plus lointaines en passant par les vastes amas de gaz qui composent l'infiniment grand, vous allez pouvoir contempler des objets atypiques de part leurs formes et leurs couleurs.</p><br />
+
+                <p> C'est avec plaisir que je vous invite à vous balader sur mon site, découvrir ma galerie d'images, mes bricolages, mes articles & publications, ... Vous trouverez également le matériel astronomique employé pour la réalisation des différents clichés disponibles sur ce site ainsi que diverses informations complémentaires. N'hésitez pas à partager vos avis et à venir le visiter régulièrement pour entrevoir les nouvelles images astrophotographiques.</p><br />
+
+                <p align="center">Je vous souhaite une bonne visite !</p>
+            </div>
+        </div>
+
+        <br></br>
+
+        <div class="row">
+        </div>
+
+        <div id="content-2">
+            <div id="presentation-image-récente">
+                <p>Dernière image publiée</p>
+            </div>
+            <div id="presentation-image">
+                <a class="image">
+                    <img src='{{photo.Image_upload.url}}'/>
+                    <p></p>
+                    <figcaption>
+                        <div>
+                            <center>
+                                <p></p>
+                                <p><b>{{photo.Nom}} ({{photo.Designation}})</b></p>
+                            </center>
+                        </div>
+                    </figcaption>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+        </div>
+        <br></br>
+
+    </div>
+    <p></p>
+
+{% endblock content %}

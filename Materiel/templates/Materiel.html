@@ -1,0 +1,66 @@
+<!-- Copyright (C) 2017     Valentin JUNGBLUTH  <valentin.jungbluth@hotmail.com>
+
+This script lets to define homepage template for "Materiel" -->
+
+{% extends 'Base_Materiel.html' %}
+
+{% load staticfiles %}
+{% load static %}
+
+{% block content %}
+    <div id="content">
+
+        <br></br>
+
+        <div id="content-1">
+            <div id="presentation-title">
+                <p>Petit mot de l'Astrophotographe & Développeur du site</p>
+            </div>
+            <div id="presentation-text">
+                <p> Venez découvrir dans cette partie du site web le matériel que j'utilise pour faire de la
+                    photographie astronomique. Des optiques à la monture en passant par les caméras et les différents
+                    (nombreux) accessoires, vous allez avoir un aperçu des outils nécessaires à l'obtention d'images du
+                    ciel profond & planétaire.</p><br/>
+
+                <p> Celui-ci résulte de pas mal (énormément) de temps de recherche, d'essais et d'investissement. Néanmoins, il
+                    semblerait que je sois proche de la configuration finale me permettant de sortir les clichés
+                    disponibles sur mon site en minimisant les difficultés.</p>
+            </div>
+        </div>
+
+        <p></p>
+        <br></br>
+
+        <div id="sommaire">
+            <ul>
+                <li><a class="sommaire-optiques" href="{% url 'Optiques' %}"> Les Optiques </a></li>
+                <li><a class="sommaire-monture" href="{% url 'Monture' %}"> La Monture </a></li>
+                <li><a class="sommaire-cameras" href="{% url 'Capteurs' %}"> Les Caméras </a></li>
+                <li><a class="sommaire-accessoires" href="#"> Les Accessoires </a></li>
+            </ul>
+        </div>
+
+        <br></br>
+        <div id="presentation-image">
+            <div class="grid">
+                <figure class="effect-new">
+                    <center>
+                        <img style='width:50%' src="{% get_static_prefix %}images/Setup.jpg" alt="Setup"/>
+                        <figcaption>
+                            <div>
+                                <p></p>
+                                <p><b>Setup complet pour l'Astrophotographie</b></p>
+                            </div>
+                        </figcaption>
+                    </center>
+                </figure>
+            </div>
+        </div>
+
+        <div class="row"></div>
+
+        <br></br>
+    </div>
+    <p></p>
+
+{% endblock content %}

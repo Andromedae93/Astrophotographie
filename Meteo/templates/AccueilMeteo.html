@@ -1,0 +1,51 @@
+<!-- Copyright (C) 2017     Valentin JUNGBLUTH  <valentin.jungbluth@hotmail.com>
+
+This script lets to define homepage template for "Meteo" -->
+
+{% extends 'Base_Accueil.html' %}
+
+{% load staticfiles %}
+{% load static %}
+
+{% block content %}
+
+		<div id="content">
+
+        	<br></br>
+
+	        <div id="content-1">
+
+			   <div id="presentation-title">
+			   		<p>Petit mot de l'Astrophotographe & Développeur du site</p>
+			   </div>
+			   <div id="presentation-text">
+			   		<p> Vous retrouverez dans cette partie quelques indicateurs météo par rapport au site du Champ du Feu (Alsace 67).</p><br />
+
+			   		<p align="center">Je vous souhaite une bonne visite !</p>
+			   </div>
+			</div>
+
+			<br></br>
+
+			<div class="frame" style="margin-left:23%">
+
+			  <iframe src="https://www.meteoblue.com/fr/meteo/widget/three/champ-du-feu_france_7667432?geoloc=fixed&nocurrent=0&noforecast=0&days=7&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 805px;height: 627px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/fr/meteo/prevision/semaine/champ-du-feu_france_7667432?utm_source=weather_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank"></a></div>
+
+            </div>
+
+			<br />
+
+            <div class="frame" style="margin-left:33%">
+
+			  <iframe src="https://www.meteoblue.com/fr/meteo/widget/seeing/champ-du-feu_france_7667432?geoloc=fixed&noground=0"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 520px;height: 755px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/fr/meteo/prevision/seeing/champ-du-feu_france_7667432?utm_source=weather_widget&utm_medium=linkus&utm_content=seeing&utm_campaign=Weather%2BWidget" target="_blank"></a></div>
+
+            </div>
+
+	    	<div class="row">
+	        </div>
+	        <br></br>
+
+	    </div>
+	    <p></p>
+
+{% endblock content %}

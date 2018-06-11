@@ -1,0 +1,186 @@
+<!-- Copyright (C) 2017     Valentin JUNGBLUTH  <valentin.jungbluth@hotmail.com>
+
+This script lets to define homepage template for "Photographies" -->
+
+{% extends 'Base_Photographies.html' %}
+
+{% load staticfiles %}
+{% load static %}
+
+{% block content %}
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('.image').magnificPopup({
+                type: 'image',
+                closeOnContentClick: true,
+                closeBtnInside: false,
+                fixedContentPos: true,
+                mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+                image: {
+                    verticalFit: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300 // don't foget to change the duration also in CSS
+                }
+            });
+
+        });
+    </script>
+    <div id="content">
+
+        <br></br>
+
+        <div id="content-1">
+            <div id="presentation-title">
+                <p>Petit mot de l'Astrophotographe & Développeur du site</p>
+            </div>
+            <div id="presentation-text">
+                <p> Vous trouverez ici toutes mes photos liées au Ciel Profond : Galaxies, Nébuleuses, Amas d'étoiles, ...</p><br/>
+
+                <p> Ce domaine est celui que je préfère, de par la diversité et la beauté des objets qui le compose !
+                </p>
+            </div>
+        </div>
+
+        <p></p>
+        <br/>
+
+        <br/>
+        <br/>
+
+        {% for object in amas_globulaires %}
+
+          <div class="row">
+				<div class="col-lg-4">
+
+				<a class="image" href="{{object.Image_upload.url}}">
+					<img src='{{object.Image_upload.url}}'/>
+					<p></p>
+					<figcaption>
+					<div>
+                        <center>
+						<p></p>
+						<p><b>{{object.Nom}}</b></p>
+                        </center>
+					</div>
+					</figcaption>
+				</a>
+				</div>
+
+				<br/>
+
+				<div class="col-lg-4">
+					<table style="width:100%">
+		                <tbody>
+		                    <p></p>
+		                <tr>
+		                    <td>Nom de l'objet</td>
+		                    <td>{{object.Nom}}</td>
+		                </tr>
+		                 <tr>
+		                    <td>Désignation de l'objet</td>
+		                    <td>{{object.Designation}}</td>
+		                </tr>
+		                <tr>
+		                    <td>Instrument</td>
+		                    <td>{{object.Instrument}}</td>
+		                </tr>
+		                <tr>
+		                    <td>Imageur</td>
+		                    <td>{{object.Imageur}}</td>
+		                </tr>
+		                <tr>
+		                    <td>Monture</td>
+		                    <td>{{object.Monture}}</td>
+		                </tr>
+		                <tr>
+		                    <td>Instrument de guidage</td>
+		                    <td>{{object.Instrument_Guidage}}</td>
+		                </tr>
+		                <tr>
+		                    <td>Caméra de guidage</td>
+		                    <td>{{object.Imageur_Guidage}}</td>
+		                </tr>
+		                <tr>
+		                    <td>Réducteur/Correcteur</td>
+		                    <td>{{object.Reducteur}}</td>
+		                </tr>
+		                <tr>
+		                    <td>Logiciels</td>
+		                    <td>{{object.Logiciels}}</td>
+		                </tr>
+		                <tr>
+		                    <td>Date</td>
+		                    <td>{{object.Date}}</td>
+		                </tr>
+
+		                </tbody>
+		            </table>
+				</div>
+
+				<div class="col-lg-4">
+					<table style="width:100%">
+		                <tbody>
+		                    <p></p>
+		                <tr>
+		                    <td>Nombre de poses</td>
+		                    <td>{{object.Nombre_Pose}}</td>
+		                </tr>
+		                <tr>
+		                    <td>Temps de pose unitaire</td>
+		                    <td>{{object.Temps_Pose}} secondes</td>
+		                </tr>
+		                <tr>
+		                    <td>Temps de pose total</td>
+		                    <td>{{object.Integration}} heures</td>
+		                </tr>
+		                <tr>
+		                    <td>Darks</td>
+		                    <td>{{object.Darks}}</td>
+		                </tr>
+		                <tr>
+		                    <td>Flats</td>
+		                    <td>{{object.Flats}}</td>
+		                </tr>
+		                <tr>
+		                    <td>Bias</td>
+		                    <td>{{object.Bias}}</td>
+		                </tr>
+		                <tr>
+		                    <td>FWHM moyenne</td>
+		                    <td>{{object.FWHM}} secondes d'arc</td>
+		                </tr>
+		                 <tr>
+		                    <td>Lunaison</td>
+		                    <td>{{object.Lunaison}}</td>
+		                </tr>
+		                <tr>
+		                    <td>Température moyenne</td>
+		                    <td>{{object.Temperature}} °C</td>
+		                </tr>
+		                <tr>
+		                    <td>Lieu</td>
+		                    <td>{{object.Lieu}}</td>
+		                </tr>
+
+		                </tbody>
+		            </table>
+		           </div>
+			</div>
+
+            <br><br />
+
+			<p class="bottom-picture"></p>
+
+			{% endfor %}
+
+			<div class="row"></div>
+
+	        <br></br>
+	</div>
+	<p></p>
+
+{% endblock content %}
